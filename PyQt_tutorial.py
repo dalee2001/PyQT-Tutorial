@@ -1,6 +1,6 @@
 '''
  This project is to learn PyQt from this video: https://www.youtube.com/watch?v=POKeqTmrbyk
- The hopes of this is to be able to build a desktop app to catalog our collection of things in the house.
+ This app creates a window that the user can enter their name and get a response back of "Hello (name)".
  '''
 
 import sys
@@ -93,4 +93,5 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)                    # Initializes application
     window = PyQtApp()                              # Create instance of our class
     window.show()                                   # Show method to run app
+
     sys.exit(app.exec())                            # sys.exit to exit app
