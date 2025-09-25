@@ -1,8 +1,6 @@
 '''
- This project is to learn PyQt from this video: https://www.youtube.com/watch?v=POKeqTmrbyk
- The hopes of this is to be able to build a desktop app to catalog our collection of things in the house.
- '''
-
+Simple PyQt5 app with a table to display submitted names.
+'''
 import sys
 from PyQt5.QtWidgets import QApplication, QWidget, QLabel, QLineEdit, QPushButton, QVBoxLayout, QMessageBox, QTableWidget, QTableWidgetItem
 
@@ -14,6 +12,8 @@ QLineEdit - Text input/entry
 QPushButton - clickable putton
 QVBoxLayout - layour mmanagement and arranges widgets vertically
 QMessageBox - Pop up box to give users info
+QTableWidget - a table widget that lets you show data in rows and columns
+QTableWidgetItem - an item (cell) inside the table (text, icons, etc.)
 '''
 
 
@@ -128,4 +128,5 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)                    # Initializes application
     window = PyQtApp()                              # Create instance of our class
     window.show()                                   # Show method to run app
+
     sys.exit(app.exec())                            # sys.exit to exit app
